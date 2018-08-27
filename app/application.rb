@@ -14,7 +14,7 @@ class Application
     elsif req.path.mathc(/cart/)
       @@cart.each do |item|
         resp.write "#{item}"
-      end 
+      end
     elsif req.path.match(/add/)
       search_term = req.params["q"]
       if @@items.include?(search_term)
