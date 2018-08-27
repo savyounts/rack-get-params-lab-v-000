@@ -25,7 +25,7 @@ class Application
         @@cart << item
         resp.write "added #{item}"
       else
-        resp.write "No item"
+        resp.write "We don't have that item"
 
       end
     elsif req.path.match(/search/)
