@@ -11,7 +11,7 @@ class Application
       @@items.each do |item|
         resp.write "#{item}\n"
       end
-    elsif req.path.mathc(/cart/)
+    elsif req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}"
       end
