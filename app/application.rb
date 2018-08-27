@@ -26,7 +26,7 @@ class Application
         resp.write "added #{item}"
       else
         resp.write "added #{item}"
-        resp.write "Item not avaliable"
+        
       end
     elsif req.path.match(/search/)
       search_term = req.params["q"]
