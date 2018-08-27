@@ -24,7 +24,7 @@ class Application
       if @@items.include?(search_term)
         @@cart << search_term
       else
-        error
+        resp.write "Item not avaliable"
       end
     elsif req.path.match(/search/)
       search_term = req.params["q"]
